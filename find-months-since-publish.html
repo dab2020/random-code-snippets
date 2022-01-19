@@ -7,12 +7,12 @@
 var present_date = new Date();
   
 // 0-11 is Month in JavaScript
-var publish_day = new Date(2021, 11, 25)
+var publish_day = new Date(2021, 1, 1)
   
 
   
 // To Calculate the result in milliseconds and then converting into days
-var Result = Math.round(publish_day.getTime() - present_date.getTime()) / (one_month);
+var Result = Math.round(present_date.getTime() - publish_day.getTime()) / (one_month);
   
 // To remove the decimals from the (Result) resulting days value
 var Final_Result = Result.toFixed(0);
